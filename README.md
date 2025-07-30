@@ -1,6 +1,7 @@
 ## Getting Started
 
 Welcome to ENSA CHAT this project is made by Yassine El Atlassi (yassinelatlassi@gmail.com)
+Before running this project you need a lib file with sqlite and javafx sdk ( look into .vscode/launch.json for a clearer vision )
 
 ## TO RUN
 
