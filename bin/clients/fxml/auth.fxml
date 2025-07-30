@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="clients.gui.AuthController">
+    <VBox alignment="CENTER" spacing="20" prefWidth="400" prefHeight="300" layoutX="250" layoutY="150"
+          style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);">
+        <padding><Insets top="30" right="30" bottom="30" left="30"/></padding>
+
+        <Label text="Bienvenue" style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+        <Label text="Veuillez vous connecter ou vous inscrire" style="-fx-text-fill: #888;" />
+
+        <TextField fx:id="emailField" promptText="Email" 
+                   style="-fx-background-radius: 8; -fx-border-radius: 8; -fx-padding: 8 12;" />
+
+        <HBox spacing="15" alignment="CENTER">
+            <Button text="Connexion" onAction="#handleLogin"
+                    style="-fx-background-color: #0078d7; -fx-text-fill: white; -fx-background-radius: 8; -fx-font-weight: bold;" />
+            <Button text="Inscription" onAction="#handleRegister"
+                    style="-fx-background-color: #28a745; -fx-text-fill: white; -fx-background-radius: 8; -fx-font-weight: bold;" />
+        </HBox>
+
+        <Label fx:id="statusLabel" textFill="red" style="-fx-font-size: 12px;" />
+    </VBox>
+</AnchorPane>
